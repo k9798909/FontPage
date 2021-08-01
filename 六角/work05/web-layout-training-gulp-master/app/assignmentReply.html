@@ -1,0 +1,186 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<div class="assignment w-100 h-100 d-flex flex-column">
+  <div>
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <div class="d-flex align-items-center">
+        <h2 class="h2">Assignment</h2>
+        <button class="showAllCoursesBtn">
+          All Courses
+          <i class="fas fa-chevron-down ms-1"></i>
+        </button>
+      </div>
+      <div>
+        <button class="iconBtn"><i class="fas fa-search me-4"></i></button>
+        <button class="iconBtn"><i class="fas fa-bell"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between w-100 mb-2">
+    <button class="showAllBtn algin-items-end">
+      All(4)
+      <i class="fas fa-chevron-down ms-1"></i>
+    </button>
+    <span class="comments">2 comments</span>
+  </div>
+
+  <div class="d-flex">
+    <div class="me-5">
+      <ul class="assignmentList border-bottom border-secondary rounded">
+        <li
+          class="
+            border border-bottom-0 border-secondary
+            d-flex
+            flex-column
+            justify-content-center
+            active
+            rounded-top
+          "
+        >
+          <button class="p-2">
+            <div class="d-flex justify-content-between">
+              <p>Chapter Assignment 2</p>
+              <span>4 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <h5>Please check this fileasdasd</h5>
+              <span>Emily Wang</span>
+            </div>
+          </button>
+        </li>
+        <li
+          class="
+            border border-bottom-0 border-secondary
+            d-flex
+            flex-column
+            justify-content-center
+          "
+        >
+          <button class="p-2">
+            <div class="d-flex justify-content-between">
+              <p>Chapter Assignment 2</p>
+              <span>4 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <h5>Please check this fileasdasd</h5>
+              <span>Emily Wang</span>
+            </div>
+          </button>
+        </li>
+        <li
+          class="
+            border border-bottom-0 border-secondary
+            d-flex
+            flex-column
+            justify-content-center
+          "
+        >
+          <button class="p-2">
+            <div class="d-flex justify-content-between">
+              <p>Chapter Assignment 2</p>
+              <span>4 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <h5>Please check this fileasdasd</h5>
+              <span>Emily Wang</span>
+            </div>
+          </button>
+        </li>
+        <li
+          class="
+            border border-bottom-0 border-secondary
+            d-flex
+            flex-column
+            justify-content-center
+            rounded-bottom
+          "
+        >
+          <button class="p-2">
+            <div class="d-flex justify-content-between">
+              <p>Chapter Assignment 2</p>
+              <span>4 hrs ago</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <h5>Please check this fileasdasd</h5>
+              <span>Emily Wang</span>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="d-flex flex-column contein border border-secondary rounded">
+      <div class="title w-100 p-2 d-flex justify-content-between rounded-top">
+        <div>
+          <div class="d-flex justify-content-between">
+            <p>Chapter Assignment 2</p>
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <h5>Please check this file for me, thanks!</h5>
+          </div>
+        </div>
+        <button class="iconBtn me-3"><i class="fas fa-ellipsis-v"></i></button>
+      </div>
+
+      <div class="p-3 mailContent">
+        <div class="d-flex align-items-center">
+          <img
+            class="photo rounded-circle me-2"
+            src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+            alt=""
+          />
+          <div class="d-flex flex-column">
+            <h5>Please check this file for me, thanks!</h5>
+            <span class="mt-2">10:38 AM (4 hours ago)</span>
+          </div>
+        </div>
+
+        <div class="px-5 py-2">
+          <p>
+            Hi Teacher, the attached file is my homework of chapter 2. And here
+            comes a question: Why in the following code the height of the div is
+            bigger than the height of the img ? There is a gap below the image,
+            but it doesn’t seems to be a padding/margin.
+            <br />What is the gap or extra space below image?
+          </p>
+        </div>
+
+        <div class="px-5 py-3 border-bottom">
+          <button class="iconBtn p-2 border border-secondary rounded bg-light">
+            <i class="far fa-file me-2"></i>HW-2-David.zip
+          </button>
+        </div>
+      </div>
+
+      <div class="answerContent">
+        <div class="w-100 px-5 py-2 d-flex toolBar">
+          <select name="" id="">
+            <option>Body Text</option>
+          </select>
+          <button class="iconBtn mx-4"><i class="fas fa-bold"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-italic"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-list-ul"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-list-ol"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-images"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-link"></i></button>
+          <button class="iconBtn mx-4"><i class="fas fa-code"></i></button>
+        </div>
+        <textarea class="p-2 w-100" name="" id="" class="w-100"></textarea>
+        <div class="d-flex justify-content-end align-items-center w-100 mt-4">
+            <button type="button" class="btn btn-outline-primary me-4">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-outline-primary me-4">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

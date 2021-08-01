@@ -1,0 +1,36 @@
+.main {
+    height: 800px;
+}
+
+.nav {
+    width: 296px;
+    padding: 32px;
+    font-weight: bold;
+    font-size: 16px;
+
+    img.icon {
+        margin-bottom: 32px;
+    }
+
+    ul {
+        li {
+            margin-bottom: 26px;
+        }
+
+        i {
+            margin-bottom: 26px;
+            margin-right: 16px;
+        }
+    }
+
+    .accImg {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+
+    .mail {
+        font-size: 14px;
+    }
+}

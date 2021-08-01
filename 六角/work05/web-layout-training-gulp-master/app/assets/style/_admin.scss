@@ -1,0 +1,139 @@
+.admin {
+    padding: 32px;
+    h2 {
+        margin-right: 47px;
+    }
+
+    .btn-outline-primary {
+        color: #198754;
+        border: #198754 solid 1px;
+    }
+    
+    .btn-outline-primary:hover {
+        color: #ffffff;
+        background-color: #198754;
+    }
+    
+    button.btn-outline-primary.active {
+        color: #ffffff;
+        background-color: #198754;
+    }
+    
+    .btn-outline-primary i {
+        margin: 0px;
+    }
+
+    .addBtn::before {
+        content: "+";
+        color: green;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .addBtn {
+        height: 24px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0px;
+        border: 0px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .table thead tr {
+        border-bottom: 2px solid #000000;
+        font-weight: bold;
+    }
+
+    .table tbody tr {
+        border-bottom: 2px solid #ced4da;
+    }
+
+    .table tbody tr td {
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+}
+
+.modal {
+    .closeBtn {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0px;
+        border: 0px;
+        font-size: 24px;
+    }
+
+    .warn {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .btn-outline-primary {
+        color: #198754;
+        border: #198754 solid 1px;
+    }
+
+    .btn-outline-primary:hover {
+        color: #ffffff;
+        background-color: #198754;
+    }
+
+    button.active {
+        color: #ffffff;
+        background-color: #198754;
+    }
+
+    .btn-outline-primary i {
+        margin: 0px;
+    }
+
+    input[type="checkbox"] {
+        margin: 0px;
+        margin-right: 5px;
+    }
+
+    input[type="checkbox"].form-check-input:checked {
+        color: #198754;
+        background-color: #198754;
+        border-color: #198754;
+    }
+
+    .photo {
+        width: 141px;
+        height: 141px;
+    }
+
+    .iconBtn {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0px;
+        border: 0px;
+    }
+}
+
+.viewModal {
+    .footerShowBtn[data-show="false"] {
+        .fa-chevron-up {
+            display: none;
+        }
+        .fa-chevron-down {
+            display: inline;
+        }
+
+    }
+
+    .footerShowBtn[data-show="true"] {
+        .fa-chevron-down {
+            display: none;
+        }
+        .fa-chevron-up {
+            display: inline;
+        }
+    }
+    .footerShow{
+        display: none;
+    }
+}
