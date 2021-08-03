@@ -1,5 +1,6 @@
 .assignment {
     padding: 32px;
+
     h2 {
         margin-right: 47px;
     }
@@ -53,8 +54,10 @@
 
     .assignmentList {
         width: 320px;
+
         li {
             height: 62px;
+
             button {
                 background-color: rgba(255, 255, 255, 0.1);
                 padding: 0px;
@@ -83,9 +86,8 @@
         }
     }
 
-    .contein {
+    .content {
         width: 100%;
-        height: 587px;
 
         .title {
             height: 62px;
@@ -105,6 +107,7 @@
         p {
             line-height: 1.5;
         }
+
         span.important {
             color: #198754;
             font-size: 16px;

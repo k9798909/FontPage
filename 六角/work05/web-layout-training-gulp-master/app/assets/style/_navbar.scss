@@ -1,25 +1,47 @@
 .main {
-    height: 800px;
+    padding-left: 296px;
 }
 
 .nav {
     width: 296px;
-    padding: 32px;
     font-weight: bold;
+    padding:32px 0px 32px 0px;
     font-size: 16px;
+    height: 100vh;
+    position: fixed;
 
     img.icon {
         margin-bottom: 32px;
+        margin-left: 32px;
     }
 
     ul {
         li {
             margin-bottom: 26px;
+            margin-top: 26px;
+            padding-left: 10px;
+            margin-left: 22px;
+            a:hover {
+                color: #198754;
+            }
+        }
+
+        li:hover {
+            color: #198754;
+        }
+
+        li.active {
+            color: #198754;
+            border-left: #198754 2px solid;
+            a {
+                color: #198754;
+            }
+
         }
 
         i {
-            margin-bottom: 26px;
             margin-right: 16px;
+            color: #198754;
         }
     }
 
@@ -28,6 +50,7 @@
         height: 40px;
         border-radius: 50%;
         margin-right: 16px;
+        margin-left: 32px;
     }
 
     .mail {

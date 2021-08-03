@@ -13,7 +13,7 @@ current: assignment
         <h2 class="h2">Assignment</h2>
         <button class="showAllCoursesBtn">
           All Courses
-          <i class="fas fa-chevron-down ms-1"></i>
+          <i class="fas fa-chevron-down ms-1 text-success"></i>
         </button>
       </div>
       <div>
@@ -28,7 +28,7 @@ current: assignment
   <div class="d-flex justify-content-between w-100 mb-2">
     <button class="showAllBtn algin-items-end">
       All(4)
-      <i class="fas fa-chevron-down ms-1"></i>
+      <i class="fas fa-chevron-down ms-1 text-success"></i>
     </button>
     <span class="comments">2 comments</span>
   </div>
@@ -39,16 +39,14 @@ current: assignment
     <!-- 左方ul -->
     <div class="me-5">
       <ul class="assignmentList border-bottom border-secondary rounded">
-        <li
-          class="
+        <li class="
             border border-bottom-0 border-secondary
             d-flex
             flex-column
             justify-content-center
             active
             rounded-top
-          "
-        >
+          ">
           <button class="p-2">
             <div class="d-flex justify-content-between">
               <p>Chapter Assignment 2</p>
@@ -60,14 +58,12 @@ current: assignment
             </div>
           </button>
         </li>
-        <li
-          class="
+        <li class="
             border border-bottom-0 border-secondary
             d-flex
             flex-column
             justify-content-center
-          "
-        >
+          ">
           <button class="p-2">
             <div class="d-flex justify-content-between">
               <p>Chapter Assignment 2</p>
@@ -79,14 +75,12 @@ current: assignment
             </div>
           </button>
         </li>
-        <li
-          class="
+        <li class="
             border border-bottom-0 border-secondary
             d-flex
             flex-column
             justify-content-center
-          "
-        >
+          ">
           <button class="p-2">
             <div class="d-flex justify-content-between">
               <p>Chapter Assignment 2</p>
@@ -98,15 +92,13 @@ current: assignment
             </div>
           </button>
         </li>
-        <li
-          class="
+        <li class="
             border border-bottom-0 border-secondary
             d-flex
             flex-column
             justify-content-center
             rounded-bottom
-          "
-        >
+          ">
           <button class="p-2">
             <div class="d-flex justify-content-between">
               <p>Chapter Assignment 2</p>
@@ -122,7 +114,7 @@ current: assignment
     </div>
     <!-- 左方ul結束 -->
     <!-- 中間內容 -->
-    <div class="d-flex flex-column contein border border-secondary rounded">
+    <div class="d-flex flex-column content border border-secondary rounded">
       <!-- title -->
       <div class="title w-100 p-2 d-flex justify-content-between rounded-top">
         <div>
@@ -140,11 +132,9 @@ current: assignment
       <!-- mail區 -->
       <div class="p-3 mailContent">
         <div class="d-flex align-items-center">
-          <img
-            class="photo rounded-circle me-2"
+          <img class="photo rounded-circle me-2"
             src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
-            alt=""
-          />
+            alt="" />
           <div class="d-flex flex-column">
             <h5>Please check this file for me, thanks!</h5>
             <span class="mt-2">10:38 AM (4 hours ago)</span>
@@ -172,11 +162,9 @@ current: assignment
       <div class="px-3 replyContent">
         <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
-            <img
-              class="photo rounded-circle me-2"
+            <img class="photo rounded-circle me-2"
               src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
-              alt=""
-            />
+              alt="" />
             <div class="d-flex flex-column">
               <h5>Please check this file for me, thanks!</h5>
               <span class="mt-2">10:38 AM (4 hours ago)</span>
@@ -200,11 +188,15 @@ current: assignment
             You can:
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• adjust the
-            <span class="important">vertical-align</span> of the image to
-            position it elsewhere (e.g. the
-            <span class="important">middle</span> ) or <br />　 • change the
-            <span class="important">display</span> so it isn’t inline.
+            <div >
+              <p class="ps-4">
+                • adjust the
+                <span class="important">vertical-align</span> of the image to
+                position it elsewhere (e.g. the
+                <span class="important">middle</span> ) or <br />• change the
+                <span class="important">display</span> so it isn’t inline.
+              </p>
+            </div>
           </p>
         </div>
       </div>
@@ -216,21 +208,19 @@ current: assignment
 
   <!-- 最下半部按鈕 -->
   <div class="mt-3 d-flex justify-content-between align-items-center w-100">
-    <div></div>
-    <div>
-      <button class="iconBtn mx-2"><i class="fas fa-chevron-left"></i></button>
-      <button class="iconBtn mx-2"><i class="fas fa-chevron-right"></i></button>
+    <div class="d-flex justify-content-end w-50">
+      <button class="iconBtn mx-2"><i class="fas fa-chevron-left text-success"></i></button>
+      <button class="iconBtn mx-2"><i class="fas fa-chevron-right text-success"></i></button>
     </div>
     <div class="d-flex justify-content-end">
       <button type="button" class="btn btn-outline-primary me-4">
         Mark as read
       </button>
-      <a href="./assignmentReply.html"
-        ><button type="button" class="btn btn-outline-primary me-4">
+      <a href="./assignmentReply.html"><button type="button" class="btn btn-outline-primary me-4">
           Reply
-        </button></a
-      >
+        </button></a>
     </div>
+
   </div>
   <!-- 最下半部按鈕結束 -->
 </div>
