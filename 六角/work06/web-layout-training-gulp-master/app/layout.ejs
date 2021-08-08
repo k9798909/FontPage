@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+
+    <div class="header border border-2">
+      <div class="container">
+        <div class="row justify-content-between align-items-center py-4">
+          <div class="col-4"></div>
+          <h1 class="col-4 text-deep-red text-center">EXHIBINECTION</h1>
+          <div class="col-4 d-flex justify-content-end">
+            <ul class="d-flex list-unstyled align-items-center">
+              <li class="mx-3">
+                <button class="border-0 bg-white text-secondary">Sign in</button>
+              </li>
+              <li class="mx-3">
+                <button class="border-0 bg-white text-secondary">Sign up</button>
+              </li>
+              <li class="mx-3">
+                <button class="border-0 bg-white">
+                  <i class="fas fa-address-book"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="banner">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-4 text-center">
+            <h2 class="text-white fw-bold">台北當代藝術展覽</h2>
+            <h2 class="text-white fw-bold">01 JUN - 31 OCT</h2>
+            <button class="btn btn-outline-light">購買票券</button>
+            <button class="btn btn-outline-light">詳細資訊</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="items border border-2">
+      <div class="container">
+        <div class="row justify-content-center py-2">
+          <ul class="col-8 d-flex align-items-center justify-content-around list-unstyled m-0 ">
+            <li><button class="text-secondary bg-white border-0">音樂</button></li>
+            <li><button class="text-secondary bg-white border-0">戲劇</button></li>
+            <li><button class="text-secondary bg-white border-0">設計</button></li>
+            <li><button class="text-secondary bg-white border-0">藝術</button></li>
+            <li><button class="text-secondary bg-white border-0">美食</button></li>
+            <li><button class="text-secondary bg-white border-0">旅遊</button></li>
+            <li><button class="text-secondary bg-white border-0">電影</button></li>
+            <li><button class="text-secondary bg-white border-0">親子</button></li>
+            <li>
+              <button class="text-secondary bg-white border-0">期間限定</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <%- contents %>
+
+    <div class="sugList py-4">
+      <div class="container">
+        <h2 class="fw-bold my-1">猜你也喜歡...</h2>
+        <div class="row justify-content-center my-4">
+          <div class="col-3">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+          <div class="col-3">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+          <div class="col-3">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true" alt="">
+            <p class="fw-bold fs-4 mb-2">No.22 線上設計展</p>
+            <span>$350</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="footer">
+    <div class="banner">
+      <div class="h-100 container">
+        <div class="h-100 pb-5 row align-items-end">
+          <div class="col-4">
+            <h2 class="text-white fw-bold">想收到展覽的最新消息嗎？</h2>
+            <h2 class="text-white fw-bold"> 快訂閱我們！</h2>
+            <div class="d-flex align-items-start w-100"><input class="w-75" type="text" placeholder="輸入電子信箱"><button class="btn text-white btn-new-pink rounded-0">訂閱</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-between py-3">
+        <div class="d-flex align-items-center">
+          <p class="fs-3 p-0 m-0 me-3">EXHIBINECTION</p><p class="p-0 m-0">© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="m-0 d-flex list-unstyled align-items-center">
+          <li class="mx-3 d-flex align-items-center">
+            <button class="border-0 bg-white text-secondary">Sign in</button>
+          </li>
+          <li class="mx-3 d-flex align-items-center">
+            <button class="border-0 bg-white text-secondary">Sign up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

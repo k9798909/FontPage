@@ -1,0 +1,31 @@
+
+.hotShow {
+    ul {
+        li {
+            height: 350px;
+            background-color: #EFEFEF;
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.liveShow {
+    .poster {
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+        height: 482px;
+        .mask {
+            background: #190014CC;
+            width: 40%;
+            height: 100%;
+            padding: 40px 20px 40px 20px;
+        }
+
+        .btn-outline-light:hover{
+            background-color: #E31277;
+            border: 1px solid #E31277;
+            color: #fff;
+        }
+    }
+}

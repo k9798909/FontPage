@@ -1,0 +1,53 @@
+.items {
+    button {
+        border: 0px;
+        background-color: #ffffff;
+    }
+
+    button:hover{
+        border-bottom: 1px solid #E31277;
+    }
+
+    button.active {
+        border-bottom: 1px solid #E31277;
+    }
+}
+
+.banner{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 480px;
+
+    .btn-outline-light:hover{
+        background-color: #E31277;
+        border: 1px solid #E31277;
+        color: #fff;
+    }
+}
+
+
+.sugList {
+    img {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.footer {
+    .banner {
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        input {
+            height: 38px;
+        }
+    }
+    
+    
+}
