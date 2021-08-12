@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row justify-content-between align-items-center py-4">
           <div class="col-4"></div>
-          <h1 class="col-4 text-deep-red text-center">EXHIBINECTION</h1>
+          <h1 class="col-4 text-deep-red text-center"><a class="text-deep-red" href="index.html">EXHIBINECTION</a></h1>
           <div class="col-4 d-flex justify-content-end">
             <ul class="d-flex list-unstyled align-items-center">
               <li class="mx-3">
@@ -25,7 +25,7 @@
                 <button class="border-0 bg-white text-secondary">Sign up</button>
               </li>
               <li class="mx-3">
-                <button class="border-0 bg-white">
+                <button class="border-0 bg-white" onclick="buycarEvent()">
                   <i class="fas fa-address-book"></i>
                 </button>
               </li>
@@ -41,7 +41,7 @@
           <ul class="col-8 d-flex align-items-center justify-content-around list-unstyled m-0 ">
             <li><button class="text-secondary">音樂</button></li>
             <li><button class="text-secondary">戲劇</button></li>
-            <li><button class="text-secondary active">設計</button></li>
+            <li><button class="text-secondary active" onclick="javascript:location.href='design.html'">設計</button></li>
             <li><button class="text-secondary">藝術</button></li>
             <li><button class="text-secondary">美食</button></li>
             <li><button class="text-secondary">旅遊</button></li>
@@ -111,6 +111,79 @@
   </div>
   </div>
 
+  <div class="buycar p-5">
+    <h2>Cart List</h2>
+    <ul class="list-unstyled productList">
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+      <li class="bg-white my-3">
+        <button class="btn fw-bold">X</button>
+        <div class="d-flex justify-content-between px-4 pb-4">
+          <img
+            class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt=""
+          />
+          <div class="d-flex flex-column justify-content-between">
+            <h5 class="fw-bold">2020 台味設計展</h5>
+            <p class="fw-bold m-0">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+            <span>$350</span>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">-</button>
+            <span class="fw-bold mx-3">01</span>
+            <button class="btn btn-white countBtn py-0 px-2 fs-5">+</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="d-flex justify-content-between align-items-center">
+      <div><span>小計</span><span>NT11050</span></div>
+      <button class="btn btn-outline-light">前往結帳</button>
+    </div>
+  </div>
+  
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

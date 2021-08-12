@@ -1,0 +1,33 @@
+.product {
+    margin-top: 80px;
+    .productImg {
+        width: 100%;
+        height: 256px;
+    }
+
+    .ticket {
+        height: 256px;
+    }
+
+    .small {
+        font-size: 14px;
+    }
+
+    button.active {
+        border-bottom: solid 1px #E31277;
+        border-radius: 0%;
+    }
+
+    .banner {
+        width: 100%;
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro {
+        width: 100%;
+        height: 559px;
+    }
+
+}
