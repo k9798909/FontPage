@@ -1,0 +1,41 @@
+.productImg {
+    width: 160px;
+    height: 84px;
+}
+
+.pointer::before {
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid #E31277;
+    background: #ffffff;
+    z-index: 999;
+    left: 45%;
+}
+
+.pointer.active::before {
+    background: #E31277;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+.line::after{
+    position: relative;
+    display: block;
+    width: 65%;
+    height: 1px;
+    background: #E31277;
+    border: 1px solid #E31277;
+    content: "";
+    top: -47px;
+}
+
+.order {
+    margin-bottom: 100px;
+}

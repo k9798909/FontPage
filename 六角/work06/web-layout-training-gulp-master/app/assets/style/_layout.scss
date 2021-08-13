@@ -69,3 +69,16 @@
         height: 120px;
     }
 }
+
+.baycarBtn::before {
+    content: "3";
+    font-size: 4px;
+    position: relative;
+    display: inline-block;
+    background-color: #E31277;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    right: -32px;
+    top: -7px;
+}

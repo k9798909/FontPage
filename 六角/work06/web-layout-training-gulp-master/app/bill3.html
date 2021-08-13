@@ -1,0 +1,105 @@
+---
+title: 首頁
+layout: ./app/layout3.ejs
+engine: ejs
+current: index
+---
+
+<div class="bill">
+  <div class="container">
+    <div class="row line mt-3">
+      <div class="col-2 text-center pointer"><p>確認訂單</p></div>
+      <div class="col-2 text-center pointer"><p>填寫訂購資訊</p></div>
+      <div class="col-2 text-center pointer active"><p>填寫付款資訊</p></div>
+      <div class="col-2 text-center pointer"><p>完成訂購</p></div>
+    </div>
+    <div class="row justify-content-between order">
+      <ul class="col-7 list-unstyled">
+        <li class="d-flex justify-content-between align-items-center mt-3">
+          <img class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="" />
+          <div>
+            <p class="fw-bold m-0 fs-5">2020 台味設計展</p>
+            <p class="fw-bold m-0 fs-5">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+          </div>
+          <div>
+            <p class="fw-bold fs-3 m-0">$350</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fw-bold fs-2">01</span>
+          </div>
+        </li>
+        <li class="d-flex justify-content-between align-items-center mt-3">
+          <img class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="" />
+          <div>
+            <p class="fw-bold m-0 fs-5">2020 台味設計展</p>
+            <p class="fw-bold m-0 fs-5">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+          </div>
+          <div>
+            <p class="fw-bold fs-3 m-0">$350</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fw-bold fs-2">01</span>
+          </div>
+        </li>
+        <li class="d-flex justify-content-between align-items-center mt-3">
+          <img class="productImg"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+            alt="" />
+          <div>
+            <p class="fw-bold m-0 fs-5">2020 台味設計展</p>
+            <p class="fw-bold m-0 fs-5">01 JUN — 31 OCT</p>
+            <div><span>全票</span></div>
+          </div>
+          <div>
+            <p class="fw-bold fs-3 m-0">$350</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fw-bold fs-2">01</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="col-4">
+        <form action="">
+          <h3 class="fw-bold mb-3">付款資訊</h3>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">信用卡帳號</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" pattern="xxxx-xxxx-xxxx-xxxx">
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">有效日期</label>
+            <input class="form-control" id="name" pattern="yyyy/MM/dd">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-bold">安全碼</label>
+            <input class="form-control" id="phone" pattern="**">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 p-3 d-flex align-items-end">
+        <button class="w-25 btn btn-outline-deep-red" onclick="javascript:location.href='bill2.html'">返回</button>
+      </div>
+      <div class="col-4 p-3">
+        <div class="w-100 mb-2 d-flex justify-content-between">
+          <p class="fs-5 m-0">小計</p> <p class="fs-5 m-0">NT$1050</p>
+        </div>
+        <div class="w-100 mb-2 d-flex justify-content-between">
+          <p class="fs-5 m-0">折扣</p> <p class="fs-5 m-0">NT$50</p>
+        </div>
+        <div class="w-100 mb-2 d-flex justify-content-between">
+          <p class="fw-bold fs-5 m-0">總金額</p> <p class="fw-bold fs-5 m-0">NT$1000</p>
+        </div>
+        <button class="w-100 btn btn-outline-deep-red" onclick="javascript:location.href='bill4.html'">下一步</button>
+      </div>
+    </div>
+  </div>
+</div>
