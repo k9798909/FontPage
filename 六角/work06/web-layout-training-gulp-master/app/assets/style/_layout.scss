@@ -5,30 +5,31 @@
         border: 1px solid #ffffff;
     }
 
-    button:hover{
-        border-bottom: 1px solid #E31277;
+    button:hover {
+        border-bottom: 1px solid #e31277;
     }
 
     button.active {
-        border-bottom: 1px solid #E31277;
+        border-bottom: 1px solid #e31277;
     }
 }
 
-.banner{
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 480px;
+.banner {
+    & {
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 480px;
+    }
 
-    .btn-outline-light:hover{
-        background-color: #E31277;
-        border: 1px solid #E31277;
+    .btn-outline-light:hover {
+        background-color: #e31277;
+        border: 1px solid #e31277;
         color: #fff;
     }
 }
-
 
 .sugList {
     img {
@@ -49,19 +50,17 @@
             height: 38px;
         }
     }
-    
-    
 }
 
 .buycar {
     position: absolute;
     width: 45%;
-    right:0px;
+    right: 0px;
     top: 108px;
     background: #000;
-    color:#ffffff;
+    color: #ffffff;
 
-    .productList{
+    .productList {
         color: #000;
     }
     .productImg {
@@ -75,7 +74,7 @@
     font-size: 4px;
     position: relative;
     display: inline-block;
-    background-color: #E31277;
+    background-color: #e31277;
     border-radius: 50%;
     width: 15px;
     height: 15px;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        *,*before*after{
+            box-sizing: border-box;
+        }
+        .main{
+            width: 640px;
+            margin: 0px auto;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .container ul li{
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .news{
+            margin: 0px 20px 0px 20px;
+            width: 288px;
+
+        }
+
+        .news p{
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .news h1{
+            line-height: 1.2;
+            font-size: 20px;
+        }
+        .footer{
+            height: 120px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <ul>
+                <li>
+                    <div><img src="https://fakeimg.pl/96x96/" alt=""></div>
+                    <div class="news">
+                        <h1>title</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam a blanditiis!</p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="https://fakeimg.pl/96x96/" alt=""></div>
+                    <div class="news">
+                        <h1>title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta adipisci reprehenderit nulla?</p>
+                    </div>
+                </li>
+            </ul>
+            <div><img src="https://fakeimg.pl/216x216/" alt=""></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
