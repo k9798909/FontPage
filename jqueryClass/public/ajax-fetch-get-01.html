@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="doAjax()">doAjax</button>
+<div id="info"></div>
+<button>Click test</button>
+<input type="text">
+
+<script src="lib/jquery-3.4.1.js"></script>
+<script>
+
+    function doAjax() {
+        fetch('/test?name=john&age=25')
+        // .then(function(response){
+        //     return response.json();
+        // })
+        .then(r=>r.json())
+        .then(obj=>{
+            console.log(obj);
+        })
+    }
+
+</script>
+</body>
+</html>

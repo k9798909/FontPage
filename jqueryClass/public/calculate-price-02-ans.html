@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        * { margin: 0; padding: 0; }
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 420px;
+        }
+        td {
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <td>商品</td>
+        <td>價格</td>
+        <td>數量</td>
+        <td>小計</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>商品一</td>
+        <td>120</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>商品二</td>
+        <td>59</td>
+        <td>2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>商品三</td>
+        <td>80</td>
+        <td>3</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>商品四</td>
+        <td>28</td>
+        <td>4</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="total"></div>
+<script>
+    let total = 0;
+    $('tbody>tr>td:nth-child(2)').each(function(){
+        let $p = $(this),
+            $q = $p.next(),
+            $s = $q.next();
+        let a = $p.text() * $q.text();
+        total += a;
+        $s.text(a);
+    });
+    $('#total').text(total);
+</script>
+</body>
+</html>

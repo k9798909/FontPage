@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: #f0f8ff;
+            overflow: hidden;
+        }
+        .ball {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(238, 67, 67);
+            left: 0px;
+            top: 0px;
+            /* transition-property: top, left;
+            transition-duration: 0.4s; */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="ball"></div>
+</div>
+<script>
+    const keyStatus = {};
+    const ball = $('.ball');
+
+    const myKDown = function(event){
+        keyStatus[event.code] = 1;
+    }
+
+    const myKUp = function(event){
+        delete keyStatus[event.code];
+    }
+
+    $(document).keydown(myKDown);
+    $(document).keyup(myKUp);
+
+    setInterval(function(){
+        console.log(keyStatus);
+        if(keyStatus['ArrowUp']){
+            ball.css('top', '-=3');
+        }
+        if(keyStatus['ArrowDown']){
+            ball.css('top', '+=3');
+        }
+        if(keyStatus['ArrowRight']){
+            ball.css('left', '+=3');
+        }
+        if(keyStatus['ArrowLeft']){
+            ball.css('left', '-=3');
+        }
+    }, 30);
+</script>
+
+</body>
+</html>

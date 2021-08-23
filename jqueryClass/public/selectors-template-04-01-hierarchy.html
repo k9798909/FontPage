@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+</head>
+<body>
+<div>
+    <ul>
+        <li>國文</li>
+        <li>英文</li>
+        <li class="math">數學</li>
+        <li>自然
+            <ul>
+                <li>生物</li>
+                <li>理化</li>
+            </ul>
+        </li>
+        <li>社會
+            <ul>
+                <li>歷史</li>
+                <li>地理</li>
+                <li>公民</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // $('div > ul > li').prepend('--&gt;');
+    // $('ul li').prepend('-&gt;');
+    // $('.math + li').prepend('-&gt;');
+    // $('.math ~ li').prepend('-&gt;');
+</script>
+</body>
+</html>

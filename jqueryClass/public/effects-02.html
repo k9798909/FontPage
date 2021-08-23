@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <style>
+        #rect {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #b0e9ff;
+        }
+        .ball {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #ff0000;
+            color: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="rect"></div>
+<script>
+    const rect = $('#rect');
+    for(let i=0; i<10; i++){
+        let b = $(`<div class="ball">${i+1}</div>`);
+        b.css({
+            left: 50 +60*i,
+            top: 50,
+        });
+        rect.append(b);
+        b.delay(300*i).animate({top:500},
+            {
+                easing:'easeOutBounce',
+                duration: 2000
+            });
+    }
+</script>
+
+</body>
+</html>

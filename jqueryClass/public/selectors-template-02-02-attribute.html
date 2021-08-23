@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<div data-my="Arron">Arron</div>
+<div data-my="Hello Arron">Hello Arron</div>
+<div data-my="Hi-Arron">Hi-Arron</div>
+<div data-my="Arron's">Arron's pet</div>
+<div data-my="Hello Bill">Hello Bill</div>
+<div data-my="HelloBill">HelloBill</div>
+<div data-my="Hello-Bill">Hello-Bill</div>
+<div>None</div>
+<div data-my="Carl" data-x="X">Carl X</div>
+<select id="combo">
+    <option value="">--請選擇--</option>
+    <option value="div[data-my]">div[data-my]</option>
+    <option value="div[data-my=Arron]">div[data-my=Arron]</option>
+    <option value="div[data-my!=Arron]">div[data-my!=Arron]</option>
+    <option value="div[data-my^=Arron]">div[data-my^=Arron]</option>
+    <option value="div[data-my$=Arron]">div[data-my$=Arron]</option>
+    <option value="div[data-my|=Hello]">div[data-my|=Hello]</option>
+    <option value="div[data-my*=Hello]">div[data-my*=Hello]</option>
+    <option value="div[data-my~=Arron]">div[data-my~=Arron]</option>
+    <option value="div[data-my=Carl][data-x=X]">div[data-my=Carl][data-x=X]</option>
+</select>
+
+
+<script>
+    $('#combo').change(function(){
+        $('div').css('background-color', 'white');
+        let sel = $(this).val();
+        if(sel){
+            $(sel).css('background-color', 'lightblue');
+        }
+    });
+</script>
+</body>
+</html>

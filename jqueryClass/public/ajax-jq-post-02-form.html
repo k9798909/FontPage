@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form name="form1" onsubmit="checkForm(); return false;">
+
+        <input type="hidden" name="aaa" value="bbb"><br>
+        <input type="text" name="account" disabled placeholder="姓名" value="Hello"><br>
+        <input type="text" name="mobile" placeholder="手機"><br>
+        <input type="text" name="address" placeholder="地址"><br>
+        <select name="gender">
+            <option value="">-- 請選擇 --</option>
+            <option value="2">女</option>
+            <option value="1">男</option>
+        </select>
+        <button>送出</button>
+    </form>
+
+
+
+<div id="info"></div>
+
+
+<script src="lib/jquery-3.4.1.js"></script>
+<script>
+
+    function checkForm() {
+        // TODO: 檢查表單欄位格式
+
+
+        $.post('/try-post', $(document.form1).serialize(), function(data){
+            console.log(data);
+            info.innerHTML = JSON.stringify(data);
+        }, 'json');
+    }
+
+</script>
+</body>
+</html>

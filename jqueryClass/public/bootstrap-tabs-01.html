@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap setup</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs my-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="#tab-1">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab-2">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab-3">Link 3</a>
+            </li>
+        </ul>
+        <div class="my-content">
+            <div id="tab-1"><h2>tab 1</h2></div>
+            <div id="tab-2"><h2>tab 2</h2></div>
+            <div id="tab-3"><h2>tab 3</h2></div>
+        </div>
+    </div>
+<script src="lib/jquery-3.4.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script>
+    const tab_btns = $('.my-tabs .nav-link');
+    const tab_cont = $('.my-content > div');
+    tab_btns.click(function(event){
+        event.preventDefault();
+        const href = $(this).attr('href');
+        tab_btns.removeClass('active');
+        $(this).addClass('active');
+        tab_cont.hide();
+        tab_cont.filter(href).show();
+    });
+    tab_btns.eq(0).click();
+</script>
+</body>
+</html>

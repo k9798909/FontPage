@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="doAjax()">doAjax</button>
+<div id="info"></div>
+
+<script src="lib/jquery-3.4.1.js"></script>
+<script>
+
+    async function doAjax() {
+        const data = {
+            name: 'Hello~',
+            note: 'pui-pui-'
+        };
+
+        const r = await fetch('/try-post',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        const obj = await r.json();
+        console.log(obj);
+        info.innerHTML = JSON.stringify(obj);
+    }
+
+</script>
+</body>
+</html>

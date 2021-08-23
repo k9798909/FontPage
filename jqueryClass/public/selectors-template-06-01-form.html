@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        input:checked + label {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" onsubmit="return false">
+    <div>
+        <label for="user">姓名：</label>
+        <input type="text" id="user" name="user">
+    </div>
+    <div>
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div>
+        <label for="password2">密碼確認：</label>
+        <input type="password" id="password2">
+    </div>
+    <div>
+        <label>性別：</label>
+        <input type="radio" name="gender" id="female" value="女">
+        <label for="female">女</label>
+        <input type="radio" name="gender" id="male" value="男" checked>
+        <label for="male">男</label>
+    </div>
+    <div>
+        <label for="title">職稱：</label>
+        <select name="title" id="title">
+            <option value="">--請選擇--</option>
+            <option value="設計師">設計師</option>
+            <option value="工程師" selected>工程師</option>
+            <option value="企劃">企劃</option>
+            <option value="專案經理">專案經理</option>
+        </select>
+    </div>
+    <div>
+        <label>興趣：</label>
+        <input type="checkbox" name="interest[]" id="interest1" value="逛街">
+        <label for="interest1">逛街</label>
+        <input type="checkbox" name="interest[]" id="interest2" value="看電影" checked>
+        <label for="interest2">看電影</label>
+        <input type="checkbox" name="interest[]" id="interest3" value="游泳">
+        <label for="interest3">游泳</label>
+        <input type="checkbox" name="interest[]" id="interest4" value="爬山" checked>
+        <label for="interest4">爬山</label>
+    </div>
+    <input type="submit" value="送出">
+</form>
+<script>
+    console.log($(':input')); // 取得表單內所有的輸入元素
+
+    console.log($('[name=gender]:checked')); // radio group 選定的項目
+    console.log(form1.gender.value); // radio group 的值
+
+    console.log($(':selected').val()); // 取得選取的元素
+    console.log($('#title').val());
+
+    console.log($('[name=interest\\[\\]]')); // 取得某 checkbox 群組的所有項目
+    //$('[name=interest\\[\\]]:checked + label').css('color', 'red');
+</script>
+</body>
+</html>

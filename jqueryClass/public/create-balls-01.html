@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        #rect {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #85fff7;
+        }
+        .ball {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            line-height: 60px;
+            text-align: center;
+            top: 0;
+            left: 0;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="rect"></div>
+
+<script>
+    const rect = $('#rect');
+    let i, b, x, y;
+    for (i = 0; i <19; i++) {
+        x = i % 7;
+        y = parseInt(i/7);
+        console.log(`i:${i}, x:${x}, y:${y}`);
+
+        b = $('<div class="ball"></div>');
+        b.css({
+            top: 50 + y*80,
+            left: 20 + x * 70
+        });
+        b.html(i+1);
+        rect.append(b);
+    }
+</script>
+</body>
+</html>

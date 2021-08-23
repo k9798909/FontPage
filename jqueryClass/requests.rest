@@ -1,0 +1,23 @@
+
+GET http://localhost:3000/test
+
+
+
+###
+
+POST http://localhost:3000/avatar
+
+###
+
+POST http://localhost:3000/try-post
+Content-Type: application/json
+
+{"a":12,"b":"bill"}
+
+####
+POST http://localhost:3000/try-post
+Content-Type: application/x-www-form-urlencoded
+
+a=24&b=david
+
+

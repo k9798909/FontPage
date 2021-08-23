@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        input:checked + label {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" onsubmit="return false">
+    <div>
+        <label>興趣：</label>
+        <input type="checkbox" name="interest[]" id="interest1" value="逛街">
+        <input type="checkbox" name="interest[]" id="interest2" value="看電影">
+        <input type="checkbox" name="interest[]" id="interest3" value="游泳">
+        <input type="checkbox" name="interest[]" id="interest4" value="爬山">
+    </div>
+</form>
+<button>準備</button>
+<script>
+    $('button').click(function(){
+        console.log($(this).text()); // this 事件來源元素
+        // $('input[name=interest\\[\\]]:checkbox')
+        $('input:checkbox[name=interest\\[\\]]').each(function(){
+            console.log(this); // this 已經換人了
+            let val = $(this).val();
+            let id = $(this).attr('id');
+            $(this).after(`<label for="${id}">${val}</label>`);
+        });
+    });
+</script>
+</body>
+</html>

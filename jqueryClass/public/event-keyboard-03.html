@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        .container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #f0f8ff;
+            overflow: hidden;
+        }
+        .player {
+            position: absolute;
+            background-image: url("img/player1.png");
+            background-position: 0px 0px;
+            width: 85px;
+            height: 128px;
+            overflow: hidden;
+            left: 0px;
+            top: 0px;
+            transition-property: top, left;
+            transition-duration: 0.4s;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="player"></div>
+</div>
+<script>
+    const player = $('.player');
+    const myHandler = function(event){
+        switch(event.code){
+            case 'ArrowUp':
+                player.css('top', '-=30');
+                player.css('background-position', '0px -384px');
+                break;
+            case 'ArrowRight':
+                player.css('left', '+=30');
+                player.css('background-position', '0px -256px');
+                break;
+            case 'ArrowDown':
+                player.css('top', '+=30');
+                player.css('background-position', '0px 0px');
+                break;
+            case 'ArrowLeft':
+                player.css('left', '-=30');
+                player.css('background-position', '0px -128px');
+                break;
+        }
+    };
+    $(document).keydown(myHandler);
+</script>
+
+</body>
+</html>

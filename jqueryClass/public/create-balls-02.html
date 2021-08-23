@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        * { margin: 0; padding: 0; }
+        #container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #85fff7;
+        }
+        .ball {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff1f8;
+            color: white;
+            line-height: 60px;
+            text-align: center;
+            top: 0;
+            left: 0;
+            border: 1px solid black;
+        }
+        .ball:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script>
+    const container = $('#container');
+    let beginWidth = 600,
+        w = beginWidth;
+    let i, b, x, y;
+    for (i = 0; i <30; i++) {
+        b = $('<div class="ball"></div>');
+        b.css({
+            top: i * 10,
+            left: i * 10,
+            width: w,
+            height: w,
+        });
+        w -= 20;
+        container.append(b);
+    }
+</script>
+</body>
+</html>

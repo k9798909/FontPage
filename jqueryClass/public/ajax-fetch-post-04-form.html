@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form name="form1" onsubmit="checkForm(); return false;">
+        <input type="text" name="account"  placeholder="姓名" value="Hello"><br>
+        <input type="text" name="mobile" placeholder="手機"><br>
+        <input type="file" name="avatar" accept="image/*"><br>
+        <select name="gender">
+            <option value="">-- 請選擇 --</option>
+            <option value="2">女</option>
+            <option value="1">男</option>
+        </select>
+        <button>送出</button>
+    </form>
+<div id="info"></div>
+<script src="lib/jquery-3.4.1.js"></script>
+<script>
+
+    async function checkForm() {
+        const fd = new FormData(document.form1);
+
+        const r = await fetch('/avatar',{
+            method: 'POST',
+            body: fd
+        });
+        const obj = await r.json();
+        console.log(obj);
+        info.innerHTML = JSON.stringify(obj);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        #rect {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #eaf8ff;
+        }
+        .ball {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff1f8;
+            border: 1px solid black;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div id="rect"></div>
+<script>
+    const rect = $('#rect');
+    const mDown = function(event){
+        rect.on('mousemove', mMove);
+        console.log('down');
+    };
+    const mUp = function(event){
+        rect.off('mousemove');
+    };
+    const mMove = function(event){
+        drawBall(event.offsetX, event.offsetY);
+    };
+    const drawBall = function(x, y){
+        const b = $('<div class="ball"></div>');
+        let size = 6 + 2*Math.floor(Math.random()*13);
+        let ang = Math.floor(Math.random()*360);
+        b.css({
+            left: x - size/2,
+            top: y - size/2,
+            width: size,
+            height: size,
+            backgroundColor: `hsl(${ang},100%,50%)`,
+        });
+        rect.append(b);
+    };
+    rect.on('mousedown', mDown);
+    $(window).on('mouseup', mUp);
+</script>
+
+</body>
+</html>

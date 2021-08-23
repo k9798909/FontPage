@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shinder's jQuery - selectors tpl 01</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <style>
+        span{
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+<h2 id="info">點擊文字，查看 console</h2>
+<script>
+    const doc = $(document);
+    const info = $('#info');
+    const listener = function(event){
+
+        console.log(event.type, event.key)
+
+        // info.html(`
+        //     <span>event.keyCode:</span> ${event.keyCode} <br>
+        //     <span>event.which:</span>   ${event.which} <br>
+        //     <span>event.key:</span>     ${event.key} <br>
+        //     <span>event.code:</span>    ${event.code} <br>
+        // `);
+    };
+    doc.on('keydown keypress keyup', listener);
+</script>
+
+</body>
+</html>
