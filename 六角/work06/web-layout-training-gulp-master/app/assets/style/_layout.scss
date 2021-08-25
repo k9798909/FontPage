@@ -6,17 +6,17 @@
     }
 
     button:hover {
-        border-bottom: 1px solid #e31277;
+        border-bottom: 1px solid $primary-pink;
     }
 
     button.active {
-        border-bottom: 1px solid #e31277;
+        border-bottom: 1px solid $primary-pink;
     }
 }
 
 .banner {
     & {
-        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+        background: url("../images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -25,8 +25,8 @@
     }
 
     .btn-outline-light:hover {
-        background-color: #e31277;
-        border: 1px solid #e31277;
+        background-color: $primary-pink;
+        border: 1px solid $primary-pink;
         color: #fff;
     }
 }
@@ -40,7 +40,7 @@
 
 .footer {
     .banner {
-        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
+        background: url("../images//wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
         height: 400px;
         background-size: cover;
         background-position: center;
@@ -74,7 +74,7 @@
     font-size: 4px;
     position: relative;
     display: inline-block;
-    background-color: #e31277;
+    background-color: $primary-pink;
     border-radius: 50%;
     width: 15px;
     height: 15px;

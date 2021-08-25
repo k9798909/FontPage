@@ -13,7 +13,7 @@
 .liveShow {
     .poster {
         & {
-            background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+            background: url("../images/people2.png");
             height: 482px;
         }
 
@@ -25,8 +25,8 @@
         }
 
         .btn-outline-light:hover {
-            background-color: #e31277;
-            border: 1px solid #e31277;
+            background-color: $primary-pink;
+            border: 1px solid $primary-pink;
             color: #fff;
         }
     }

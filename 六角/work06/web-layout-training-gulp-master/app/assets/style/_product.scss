@@ -17,13 +17,13 @@
     }
 
     button.active {
-        border-bottom: solid 1px #e31277;
+        border-bottom: solid 1px $primary-pink;
         border-radius: 0%;
     }
 
     .banner {
         width: 100%;
-        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg?raw=true");
+        background: url("../images/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
